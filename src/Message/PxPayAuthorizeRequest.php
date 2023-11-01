@@ -311,6 +311,6 @@ class PxPayAuthorizeRequest extends AbstractRequest
      */
     public function getReturnUrl()
     {
-        return htmlentities($this->getParameter('returnUrl'));
+        return $this->getParameter('returnUrl');
     }
 }
